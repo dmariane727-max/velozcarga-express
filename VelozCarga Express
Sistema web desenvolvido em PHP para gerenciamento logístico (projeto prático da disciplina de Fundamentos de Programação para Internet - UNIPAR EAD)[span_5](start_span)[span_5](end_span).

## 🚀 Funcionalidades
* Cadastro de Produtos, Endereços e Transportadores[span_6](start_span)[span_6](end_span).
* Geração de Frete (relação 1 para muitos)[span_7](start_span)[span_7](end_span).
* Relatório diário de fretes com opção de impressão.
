@@ -1,7 +1,0 @@
-# VelozCarga Express
-Sistema web desenvolvido em PHP para gerenciamento logístico (projeto prático da disciplina de Fundamentos de Programação para Internet - UNIPAR EAD)[span_5](start_span)[span_5](end_span).
-
-## 🚀 Funcionalidades
-* Cadastro de Produtos, Endereços e Transportadores[span_6](start_span)[span_6](end_span).
-* Geração de Frete (relação 1 para muitos)[span_7](start_span)[span_7](end_span).
-* Relatório diário de fretes com opção de impressão.
