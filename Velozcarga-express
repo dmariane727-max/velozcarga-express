@@ -84,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="?aba=home">🚚 VelozCarga Express</a>
+        <a class="navbar-brand fw-bold" href="?aba=home"> VelozCarga Express</a>
         <div class="d-flex flex-wrap gap-2">
             <a class="btn btn-sm <?= $aba=='home'?'btn-warning':'btn-outline-light' ?>" href="?aba=home">Início</a>
             <a class="btn btn-sm <?= $aba=='produtos'?'btn-warning':'btn-outline-light' ?>" href="?aba=produtos">Produtos</a>
@@ -109,7 +109,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
 
     <?php elseif ($aba == 'produtos'): ?>
-        <h3 class="mb-3">📦 Produtos</h3>
+        <h3 class="mb-3"> Produtos</h3>
         <ul class="list-group shadow-sm mb-4">
             <?php foreach($_SESSION['produtos'] as $p): ?>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -120,7 +120,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </ul>
 
     <?php elseif ($aba == 'enderecos'): ?>
-        <h3 class="mb-3">📍 Endereços</h3>
+        <h3 class="mb-3"> Endereços</h3>
         <ul class="list-group shadow-sm mb-4">
             <?php foreach($_SESSION['enderecos'] as $e): ?>
                 <li class="list-group-item">
@@ -131,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </ul>
 
     <?php elseif ($aba == 'transportadores'): ?>
-        <h3 class="mb-3">🚚 Transportadores</h3>
+        <h3 class="mb-3"> Transportadores</h3>
         <ul class="list-group shadow-sm mb-4">
             <?php foreach($_SESSION['transportadores'] as $t): ?>
                 <li class="list-group-item"><strong><?= $t['nome'] ?></strong> — Veículo: <?= $t['veiculo'] ?></li>
@@ -139,7 +139,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </ul>
 
     <?php elseif ($aba == 'fretes'): ?>
-        <h3 class="mb-3">📋 Gerar Frete</h3>
+        <h3 class="mb-3"> Gerar Frete</h3>
         <form method="POST" class="card p-4 shadow-sm">
             <div class="mb-3">
                 <label class="form-label fw-bold">Transportador:</label>
@@ -180,8 +180,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <?php elseif ($aba == 'relatorio'): ?>
         <div class="d-flex justify-content-between align-items-center mb-3">
-            <h3>📊 Relatório Diário</h3>
-            <button onclick="window.print()" class="btn btn-dark">🖨️ Imprimir PDF</button>
+            <h3> Relatório Diário</h3>
+            <button onclick="window.print()" class="btn btn-dark"> Imprimir PDF</button>
         </div>
         <div class="table-responsive bg-white shadow-sm rounded">
             <table class="table table-bordered mb-0">
